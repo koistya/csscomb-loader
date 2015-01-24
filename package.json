@@ -1,0 +1,36 @@
+{
+  "name": "csscomb-loader",
+  "version": "0.0.1",
+  "description": "CSSComb loader for webpack",
+  "main": "index.js",
+  "author": "Konstantin Tarkus <hello@tarkus.me>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koistya/csscomb-loader"
+  },
+  "bugs": {
+    "url": "https://github.com/koistya/csscomb-loader/issues"
+  },
+  "dependencies": {
+    "csscomb": "^3.0.0",
+    "loader-utils": "^0.2.5"
+  },
+  "devDependencies": {
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "csscomb",
+    "css",
+    "sass",
+    "scss",
+    "less"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "gulp"
+  }
+}
