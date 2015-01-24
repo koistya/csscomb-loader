@@ -9,10 +9,10 @@
 'use strict';
 
 var CssComb = require('csscomb');
-var loaderUtils = require('loader-utils');
+var LoaderUtils = require('loader-utils');
 
 var csscomb = new CssComb();
-var config = CssComb.getConfig('csscomb');
+var config = CssComb.getCustomConfig() || CssComb.getConfig('csscomb');
 
 csscomb.configure(config);
 
@@ -22,11 +22,10 @@ module.exports = function(source) {
     this.cacheable();
   }
 
-  var file = loaderUtils.getRemainingRequest(this);
-
   // TODO: Read the params and configure CSScomb
   // var params = loaderUtils.parseQuery(this.query);
 
+  var file = LoaderUtils.getRemainingRequest(this);
   var syntax = file.split('.').pop();
   var processed = csscomb.processString(source, { syntax: syntax });
 
