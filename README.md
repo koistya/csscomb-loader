@@ -38,6 +38,11 @@ module.exports = {
 };
 ```
 
-### License
+## Reference Articles
+
+ * [Sorting CSS properties, the better way](http://www.smashingmagazine.com/2012/10/02/csscomb-tool-sort-css-properties/) by Vyacheslav Oliyanchuk
+ * [Reduce file size with CSS Sorting](http://peteschuster.com/2014/12/reduce-file-size-css-sorting/) by Pete Schuster
+
+## License
 
 [MIT](./LICENSE.txt) (c) Konstantin Tarkus ([@koistya](https://twitter.com/koistya))
